@@ -6,7 +6,9 @@ from utils import get_dataframe
 
 
 class Pipeline(ABC):
-
+    """
+    Base class for ML pipelines
+    """
     def __init__(self,
                  session: SparkSession,
                  df_name: str,
